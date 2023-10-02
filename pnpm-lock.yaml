@@ -2797,8 +2797,8 @@ packages:
     dependencies:
       '@babel/core': 7.23.0
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-environment-visitor': 7.22.5
-      '@babel/helper-function-name': 7.22.5
+      '@babel/helper-environment-visitor': 7.22.20
+      '@babel/helper-function-name': 7.23.0
       '@babel/helper-member-expression-to-functions': 7.22.15
       '@babel/helper-optimise-call-expression': 7.22.5
       '@babel/helper-replace-supers': 7.22.9(@babel/core@7.23.0)
@@ -10275,8 +10275,8 @@ packages:
   /@types/babel__core@7.20.2:
     resolution: {integrity: sha512-pNpr1T1xLUc2l3xJKuPtsEky3ybxN3m4fJkknfIpTCTfIZCDW57oAg+EfCgIIp2rvCe0Wn++/FfodDS4YXxBwA==}
     dependencies:
-      '@babel/parser': 7.22.16
-      '@babel/types': 7.22.15
+      '@babel/parser': 7.23.0
+      '@babel/types': 7.23.0
       '@types/babel__generator': 7.6.4
       '@types/babel__template': 7.4.1
       '@types/babel__traverse': 7.18.3
@@ -10560,6 +10560,11 @@ packages:
 
   /@types/node@20.8.1:
     resolution: {integrity: sha512-iN6stS2QGMl50pjH0h/dIfmcEUogljAreQZ+cubPw3ISWp5fJrZw9NOh/sDHJfw92A41hCU+Ls5zTIsNYzcnuA==}
+    dev: true
+
+  /@types/node@20.8.2:
+    resolution: {integrity: sha512-Vvycsc9FQdwhxE3y3DzeIxuEJbWGDsnrxvMADzTDF/lcdR9/K+AQIeAghTQsHtotg/q0j3WEOYS/jQgSdWue3w==}
+    dev: true
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -11486,8 +11491,8 @@ packages:
       '@babel/helper-module-imports': 7.22.15
       '@babel/plugin-syntax-jsx': 7.22.5(@babel/core@7.23.0)
       '@babel/template': 7.22.15
-      '@babel/traverse': 7.22.15
-      '@babel/types': 7.22.15
+      '@babel/traverse': 7.23.0
+      '@babel/types': 7.23.0
       '@vue/babel-helper-vue-transform-on': 1.1.5
       camelcase: 6.3.0
       html-tags: 3.3.1
@@ -11548,7 +11553,7 @@ packages:
   /@vue/compiler-sfc@3.3.4:
     resolution: {integrity: sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==}
     dependencies:
-      '@babel/parser': 7.22.16
+      '@babel/parser': 7.23.0
       '@vue/compiler-core': 3.3.4
       '@vue/compiler-dom': 3.3.4
       '@vue/compiler-ssr': 3.3.4
@@ -25808,7 +25813,7 @@ packages:
       estree-walker: 3.0.3
       is-reference: 3.0.1
       locate-character: 3.0.0
-      magic-string: 0.30.2
+      magic-string: 0.30.4
       periscopic: 3.1.0
     dev: true
 
@@ -27520,7 +27525,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.6(patch_hash=s5kzatt2y2dzfxfynxzvzt5kbm)
       '@types/chai-subset': 1.3.3
-      '@types/node': 20.8.1
+      '@types/node': 18.16.19
       '@vitest/browser': link:packages/browser
       '@vitest/expect': 0.30.1
       '@vitest/runner': 0.30.1
@@ -27544,7 +27549,7 @@ packages:
       tinybench: 2.5.0
       tinypool: 0.4.0
       vite: 4.4.9(@types/node@18.16.19)(less@4.1.3)
-      vite-node: 0.30.1(@types/node@20.8.1)
+      vite-node: 0.30.1(@types/node@18.16.19)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
@@ -27589,7 +27594,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.6(patch_hash=s5kzatt2y2dzfxfynxzvzt5kbm)
       '@types/chai-subset': 1.3.3
-      '@types/node': 20.8.1
+      '@types/node': 18.16.19
       '@vitest/browser': link:packages/browser
       '@vitest/expect': 0.34.0
       '@vitest/runner': 0.34.0
@@ -27611,7 +27616,7 @@ packages:
       tinybench: 2.5.0
       tinypool: 0.7.0
       vite: 4.4.9(@types/node@18.16.19)(less@4.1.3)
-      vite-node: 0.34.0(@types/node@20.8.1)
+      vite-node: 0.34.0(@types/node@18.16.19)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
