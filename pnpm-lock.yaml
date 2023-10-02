@@ -1410,8 +1410,8 @@ importers:
         specifier: ^7.1.1
         version: 7.1.1
       expect-type:
-        specifier: 0.17.0-1
-        version: 0.17.0-1
+        specifier: 0.17.0-2
+        version: 0.17.0-2
       fast-glob:
         specifier: ^3.3.0
         version: 3.3.0
@@ -15908,8 +15908,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /expect-type@0.17.0-1:
-    resolution: {integrity: sha512-r2ubQsBXoo916ifRzrdVXayJDZEZnBMLk2mBkgvZwINSATyqTNYWDDRaZFAqyh1a4Wz0g3bLUDCmJkmqi8zBQw==}
+  /expect-type@0.17.0-2:
+    resolution: {integrity: sha512-Fad2dldx6QVuAorBCeeXg85IkfhIKlxp879vZqYMwQvqSawZt5IuAulJzL64NPJOmapVBTKXPOILsgfZzbMIVw==}
     engines: {node: '>=12.0.0'}
     dev: true
 
