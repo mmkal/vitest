@@ -9,6 +9,9 @@ overrides:
   vitest: workspace:*
 
 patchedDependencies:
+  '@sinonjs/fake-timers@11.1.0':
+    hash: trok5obk3l5tdlygozv34fknii
+    path: patches/@sinonjs__fake-timers@11.1.0.patch
   '@types/chai@4.3.6':
     hash: s5kzatt2y2dzfxfynxzvzt5kbm
     path: patches/@types__chai@4.3.6.patch
@@ -1082,7 +1085,7 @@ importers:
         version: 4.3.10
     devDependencies:
       '@types/chai':
-        specifier: ^4.3.6
+        specifier: 4.3.6
         version: 4.3.6(patch_hash=s5kzatt2y2dzfxfynxzvzt5kbm)
       '@vitest/runner':
         specifier: workspace:*
@@ -1372,8 +1375,8 @@ importers:
         specifier: 3.0.3
         version: 3.0.3
       '@sinonjs/fake-timers':
-        specifier: ^11.0.0
-        version: 11.0.0
+        specifier: 11.1.0
+        version: 11.1.0(patch_hash=trok5obk3l5tdlygozv34fknii)
       '@types/diff':
         specifier: ^5.0.3
         version: 5.0.3
@@ -1397,7 +1400,7 @@ importers:
         version: 2.4.4
       '@types/sinonjs__fake-timers':
         specifier: ^8.1.2
-        version: 8.1.2
+        version: 8.1.3
       birpc:
         specifier: 0.2.14
         version: 0.2.14
@@ -2596,7 +2599,7 @@ packages:
     resolution: {integrity: sha512-LvBTxu8bQSQkcyKOU+a1btnNFQ1dMAd0R6PyW3arXes06F6QLWLIrd681bxRPIXlrMGR3XYnW9JyML7dP3qgxg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.15
+      '@babel/types': 7.23.0
     dev: true
 
   /@babel/helper-builder-binary-assignment-operator-visitor@7.18.9:
@@ -2816,8 +2819,8 @@ packages:
     dependencies:
       '@babel/core': 7.22.15
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-environment-visitor': 7.22.5
-      '@babel/helper-function-name': 7.22.5
+      '@babel/helper-environment-visitor': 7.22.20
+      '@babel/helper-function-name': 7.23.0
       '@babel/helper-member-expression-to-functions': 7.22.15
       '@babel/helper-optimise-call-expression': 7.22.5
       '@babel/helper-replace-supers': 7.22.9(@babel/core@7.22.15)
@@ -2998,7 +3001,7 @@ packages:
     resolution: {integrity: sha512-qLNsZbgrNh0fDQBCPocSL8guki1hcPvltGDv/NxvUoABwFq7GkKSu1nRXeJkVZc+wJvne2E0RKQz+2SQrz6eAA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.15
+      '@babel/types': 7.23.0
     dev: true
 
   /@babel/helper-module-imports@7.16.0:
@@ -3171,7 +3174,7 @@ packages:
     resolution: {integrity: sha512-HBwaojN0xFRx4yIvpwGqxiV2tUfl7401jlok564NgB9EHS1y6QT17FmKWm4ztqjeVdXLuC4fSvHc5ePpQjoTbw==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.15
+      '@babel/types': 7.23.0
     dev: true
 
   /@babel/helper-plugin-utils@7.10.4:
@@ -3263,7 +3266,7 @@ packages:
       '@babel/core': ^7.0.0
     dependencies:
       '@babel/core': 7.22.15
-      '@babel/helper-environment-visitor': 7.22.5
+      '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-member-expression-to-functions': 7.22.15
       '@babel/helper-optimise-call-expression': 7.22.5
     dev: true
@@ -3285,7 +3288,7 @@ packages:
     resolution: {integrity: sha512-tK14r66JZKiC43p8Ki33yLBVJKlQDFoA8GYN67lWCDCqoL6EMMSuM9b+Iff2jHaM/RRFYl7K+iiru7hbRqNx8Q==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.15
+      '@babel/types': 7.23.0
     dev: true
 
   /@babel/helper-split-export-declaration@7.22.6:
@@ -9393,11 +9396,12 @@ packages:
       type-detect: 4.0.8
     dev: true
 
-  /@sinonjs/fake-timers@11.0.0:
-    resolution: {integrity: sha512-bqiI/5ur6ZOozG06BeJjbplIqHY/KftV1zaewbZHORH902GrHURKwl7H1G/4OC5EaxDYQJlrD0OLJ1XD6x01dQ==}
+  /@sinonjs/fake-timers@11.1.0(patch_hash=trok5obk3l5tdlygozv34fknii):
+    resolution: {integrity: sha512-pUBaWhXoa9N0R/LeYKLqkrN9mqN3jwKBeMfbvlRtHUzLmk55o+0swncIuZBcSH/PpXDttRf/AcPF22pknAzORQ==}
     dependencies:
       '@sinonjs/commons': 3.0.0
     dev: true
+    patched: true
 
   /@sinonjs/fake-timers@8.1.0:
     resolution: {integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==}
@@ -11513,8 +11517,8 @@ packages:
     resolution: {integrity: sha512-0kSuKjAS0TrGLJ0M/+8MaFkGsQhZpB6pxOmvS3K8FYI72K//YmdfoW9X2qPsAKh1mkwxGD5zib9s1FIFed6E8g==}
     dev: true
 
-  /@types/sinonjs__fake-timers@8.1.2:
-    resolution: {integrity: sha512-9GcLXF0/v3t80caGs5p2rRfkB+a8VBGLJZVih6CNFkx8IZ994wiKKLSRs9nuFwk1HevWs/1mnUmkApGrSGsShA==}
+  /@types/sinonjs__fake-timers@8.1.3:
+    resolution: {integrity: sha512-4g+2YyWe0Ve+LBh+WUm1697PD0Kdi6coG1eU0YjQbwx61AZ8XbEpL1zIT6WjuUKrCMCROpEaYQPDjBnDouBVAQ==}
     dev: true
 
   /@types/sizzle@2.3.3:
