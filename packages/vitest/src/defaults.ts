@@ -13,6 +13,7 @@ export const benchmarkConfigDefaults: Required<Omit<BenchmarkUserOptions, 'outpu
 const defaultCoverageExcludes = [
   'coverage/**',
   'dist/**',
+  '**/[.]**',
   'packages/*/test?(s)/**',
   '**/*.d.ts',
   '**/virtual:*',
@@ -39,7 +40,7 @@ export const coverageConfigDefaults: ResolvedCoverageOptions = {
   exclude: defaultCoverageExcludes,
   reportOnFailure: false,
   reporter: [['text', {}], ['html', {}], ['clover', {}], ['json', {}]],
-  extension: ['.js', '.cjs', '.mjs', '.ts', '.mts', '.cts', '.tsx', '.jsx', '.vue', '.svelte'],
+  extension: ['.js', '.cjs', '.mjs', '.ts', '.mts', '.cts', '.tsx', '.jsx', '.vue', '.svelte', '.marko'],
   allowExternal: false,
 }
 
@@ -62,7 +63,7 @@ const config = {
   watch: !isCI,
   globals: false,
   environment: 'node' as const,
-  pool: 'threads',
+  pool: 'threads' as const,
   clearMocks: false,
   restoreMocks: false,
   mockReset: false,

@@ -70,7 +70,7 @@ beforeEach(() => setActivePinia(createTestingPinia())) // [!code --]
 beforeEach(() => { setActivePinia(createTestingPinia()) }) // [!code ++]
 ```
 
-In Jest hooks are caled sequentially (one after another). By default, Vitest runs hooks in parallel. To use Jest's behavior, update [`sequence.hooks`](/config/#sequence-hooks) option:
+In Jest hooks are called sequentially (one after another). By default, Vitest runs hooks in parallel. To use Jest's behavior, update [`sequence.hooks`](/config/#sequence-hooks) option:
 
 ```ts
 export default defineConfig({
@@ -84,7 +84,7 @@ export default defineConfig({
 
 ### Types
 
-Vitest doesn't expose a lot of types on `Vi` namespace, it exists mainly for compatibility with matchers, so you might need to import types directly from `vitest` instead of relying on `Vi` namespace:
+Vitest doesn't have an equivalent to `jest` namespace, so you will need to import types directly from `vitest`:
 
 ```ts
 let fn: jest.Mock<string, [string]> // [!code --]
