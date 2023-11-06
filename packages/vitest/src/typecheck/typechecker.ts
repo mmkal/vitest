@@ -187,6 +187,7 @@ export class Typechecker {
       const suiteErrors = errors.map((info) => {
         const limit = Error.stackTraceLimit
         Error.stackTraceLimit = 0
+        info.errMsg = JSON.stringify(info.errMsg)
         // Some expect-type errors have the most useful information on the second line e.g. `This expression is not callable.\n  Type 'ExpectString<number>' has no call signatures.`
         const errMsg = info.errMsg.replace(/\n {2}(Type .* has no call signatures)/g, ' $1')
         if (errMsg.includes('TypeCheckError:')) {
