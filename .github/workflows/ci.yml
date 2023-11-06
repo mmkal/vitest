@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
+      - ci-debug
 
   pull_request:
     branches:
       - main
-      - ci-debug
 
 concurrency:
   group: ci-${{ github.event.pull_request.number || github.ref }}
