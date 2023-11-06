@@ -189,6 +189,10 @@ export class Typechecker {
         Error.stackTraceLimit = 0
         // Some expect-type errors have the most useful information on the second line e.g. `This expression is not callable.\n  Type 'ExpectString<number>' has no call signatures.`
         const errMsg = info.errMsg.replace(/\n {2}(Type .* has no call signatures)/g, ' $1')
+        if (errMsg.includes('TypeCheckError:')) {
+          console.warn({ errMsg, info })
+          console.warn(JSON.stringify({ errMsg, info }))
+        }
         const error = new TypeCheckError(errMsg, [
           {
             file: filepath,
