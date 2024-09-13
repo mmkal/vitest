@@ -14,4 +14,4 @@ jobs:
       - run: pnpm install
       - run: pnpm build
       - name: Publish to pkg.pr.new
-        run: pnpx pkg-pr-new publish --compact --no-template --pnpm './packages/*'
+        run: pnpx pkg-pr-new publish --no-template --pnpm './packages/*'
