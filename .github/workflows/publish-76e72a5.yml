@@ -1,0 +1,16 @@
+name: Publish
+  
+  on:
+    push:
+      branches:
+        - 'publish-*'
+  
+  jobs:
+    publish:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+    - run: pnpm install
+    - run: pnpm run build
+    - run: pnpx pkg-pr-new publish --no-template --pnpm './packages/*'
