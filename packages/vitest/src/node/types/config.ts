@@ -403,7 +403,7 @@ export interface InlineConfig {
    * @default []
    */
   reporters?:
-    | Arrayable<ReporterName | InlineReporter>
+    | Arrayable<ReporterName | InlineReporter | null | undefined | 0 | ''>
     | (
         | (ReporterName | InlineReporter)
         | [ReporterName]

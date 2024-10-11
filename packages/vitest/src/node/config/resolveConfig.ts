@@ -624,7 +624,7 @@ export function resolveConfig(
           // Reporter name in array, e.g. { reporters: ["html", "json"]}
           resolved.reporters.push([reporter, {}])
         }
-        else {
+        else if (reporter) {
           // Inline reporter, e.g. { reporter: [{ onFinish() { method() } }] }
           resolved.reporters.push(reporter)
         }
